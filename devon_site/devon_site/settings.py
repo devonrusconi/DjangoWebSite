@@ -27,11 +27,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'i_t(6ao3=q9es3i73vhp!8ey2q&lj+dqev5+tf=fnzyc!ld1pr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['devon.pythonanywhere.com']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
