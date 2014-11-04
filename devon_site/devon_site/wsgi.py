@@ -1,21 +1,21 @@
-# TURN ON THE VIRTUAL ENVIRONMENT FOR YOUR APPLICATION
-activate_this = '/home/devon/.virtualenvs/devon/bin/activate_this.py'
-execfile(activate_this, dict(__file__=activate_this))
+# This file contains the WSGI configuration required to serve up your
+# web application at http://devon.pythonanywhere.com/
+# It works by setting the variable 'application' to a WSGI handler of some
+# description.
+#
+# The below has been auto-generated for your Django project
 
 import os
 import sys
 
-# ADD YOUR PROJECT TO THE PYTHONPATH FOR THE PYTHON INSTANCE
-path = '/home/devon/devon_site/devon_site'
+# add your project directory to the sys.path
+project_home = u'/home/devon'
+if project_home not in sys.path:
+    sys.path.append(project_home)
 
-if path not in sys.path:
-    sys.path.append(path)
-
-os.chdir(path)
-
-# TELL DJANGO WHERE YOUR SETTINGS MODULE IS LOCATED
+# set environment variable to tell django where your settings.py is
 os.environ['DJANGO_SETTINGS_MODULE'] = 'devon_site.settings'
 
-# IMPORT THE DJANGO WSGI HANDLER TO TAKE CARE OF REQUESTS
+# serve django via WSGI
 import django.core.handlers.wsgi
 application = django.core.handlers.wsgi.WSGIHandler()
