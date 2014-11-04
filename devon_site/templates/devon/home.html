@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+{% load static %} <!-- New line -->
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Welcome</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+</head>
+    <body>
+<div id="container">
+	<div id="header" title="sitename">
+		<h1>
+			Devon Dominique Rusconi
+		</h1>
+		
+		
+	</div>
+	<div id="menu">
+		<h3>
+			Discover:
+		</h3>
+		<ul>
+			<li><a href="/home/">About</a></li>
+			<li><a href="/journal/">My Blog</a></li>
+			<li><a href="/tutorials/">Tutorials</a></li>
+			<li><a href="/projects/">Projects</a></li>
+			<li><a href="/ComputerScience/">Computer Science</a></li>
+			<li><a href="/MentalHealthProject/">My Mental Health Movement</a></li>
+			<li><a href="/Stories/">Stories</a></li>
+			</ul>
+			<h3>
+			Contact Me:
+			</h3>
+			<ul>
+			Twitter: <li><a href="https://twitter.com/DevonRusconi">@DevonRusconi</a></li>
+			FaceBook: <li><a href="https://www.facebook.com/BeingScripted">WritingJourney</a></li>
+			Linkedin: <li><a href="https://www.linkedin.com/in/devonrusconi">Linkedin</a></li>
+			GitHub: <li><a href="https://github.com/DRusconi-CSUMB">GitHub</a></li>
+			YouTube: <li><a href="https://www.youtube.com/user/RusconiRecordings/">YouTube</a></li>
+			Professional Email: <li><a href="https://mail.google.com/">drusconi@csumb.edu</a></li>
+			
+		</ul>
+		
+ 	</div>
+	
+	<div id="contents">
+		<div class="blogentry">
+			<h1>
+				Welcome to My Website!
+			</h1>
+			
+			<img src="{% static "Devon.jpg" %}" alt="Picture" /> <!-- New line -->
+			<p>
+				Hello, my name is Devon Rusconi and I am a computer science student at California State University of Monterey Bay and Hartnell College.
+			</p>
+			<h2>
+				My Dream?
+			</h2>
+			<p>
+				My dream is to use the technology skills that I have been learning in college and combine them with creativity and hope. 
+			</p>
+			<h2>
+				Why Creativity? Why Hope?
+			</h2>
+			<p>
+				I say creativity because I love to think outside of the box, after all, I am a writer. I like to think of plot twists and different character traits and unusual settings and story descriptions. 	
+			</p>
+			
+			<h2>
+				What Does Creativity Have To Do With Tech?
+			</h2>
+			<p>
+				This is the same thing as coding isn't it? You have to get creative in how to fix a bug or how to implement certain functions. You also have to get creative on what kind of software to build, or what programs should be useful...and this is where the
+				hope comes in. 
+			</p> 
+			<h2>
+				But What About The Hope?
+			</h2>
+			<p>
+				I am working on making software and applications to help slow down systems of mental disorders. Mental Health has been apart of my family for generations. Anxiety has struck some of my family members so hard that they are scared to leave their homes or won't leave their town. 
+				Depression has struck many others to the point where they get emotionally sick and then physically sick. Then there is self-harm, anorexia, bulimia, and other mental disorders that are very life threatening and can lead to suicide. I myself have gone through many of these disorders. 
+				My mission is to create an App or other types of software to encourage these disorders to disappear from a person's mind.
+			</p> 
+			<h2>
+				How Will This Happen?
+			</h2>
+			<p>
+				This website will have information about my technical projects and updates about my computer science career, however on the Mental Health Movement tab, there will be updates and information as well as articles about how to prevent these mental diseases. 
+				I will also post videos as well as blogs about myself as well as others experience with the illness. My project updates for the software to help the cause will be posted as well.
+			</p> 
+			
+		</div>
+	</div>
+	
+	<div id="footer">
+		Copyright © Rusconi 2014
+	</div>
+</div>
+
+</body>
+<style>
+body
+{
+	margin: 0;
+	padding: 0;
+	background: burlywood;
+}
+#container
+{
+	margin: 1em auto;
+	width: 1200px;
+	background: white;
+}
+
+#header 
+{ 
+	background: pink; 
+	width: 200;
+
+}
+
+#menu
+{
+	float: right;
+	width: 215px;
+	background: pink;
+}
+
+
+#picture
+{
+	float: bottom right;
+	width: 0;
+	background: white;
+}
+
+#contents
+{
+	float: center;
+	width: 1100px;
+	background: white;
+	margin: 0 0 0 20px;
+}
+
+#footer
+{
+	clear: both;
+	background: burlywood;
+}
+</style>
+</html>
