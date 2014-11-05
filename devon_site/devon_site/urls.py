@@ -9,7 +9,7 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
     
    
-    url(r'^home/', include('devon.urls')), # ADD THIS NEW TUPLE!
+    url(r'^$', include('devon.urls')), # ADD THIS NEW TUPLE!
     url(r'^journal/', 'devon.views.journal'),
     url(r'^tutorials/', 'devon.views.tutorials'),
     url(r'^projects/', 'devon.views.projects'),
